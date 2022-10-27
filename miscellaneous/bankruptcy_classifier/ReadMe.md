@@ -3,7 +3,7 @@ To build a model to predict whether a bank will be bankrupt or not
 
 ### Data Pre-processing
 1. Dropping null values if there are a lot of them
-2. Oversampling minority label with SMOTE to address class imbalances
+2. Oversampling minority label with SMOTE to address class imbalance
 3. Standardizing the data 
 
 ### Different Models Trained
