@@ -33,4 +33,4 @@ The Dataset for French and English sentence pairs are obtained from this [websit
 4. The hidden cell states are given as inputs to the cell states of the decoder.
 5. It too has an embedding layer followed by LSTM units.
 6. Along with the inputs from the encoder it also takes in input from the user (i.e. decoder input specified above)
-7. The output predictions will be compared against *decoder output*.
+7. The output predictions can be compared against *decoder output*.
