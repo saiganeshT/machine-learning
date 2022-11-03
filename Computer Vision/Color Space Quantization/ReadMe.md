@@ -7,7 +7,21 @@ To quantize the color space of RGB and HSV images
 2. Create a new array with the same shape as our input image.
 3. Fill the pixel values in the new array with the pixel value of the closest k-means cluster center.
 
+_**Input Image**_
+
+![input image](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Color%20Space%20Quantization/images/fish.jpg?raw=true)
+
 _**Results**_
+
+###### with k = 2
+![output_image_when_k=2](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Color%20Space%20Quantization/images/quantizedRGB_k_2.png?raw=true)
+
+###### with k = 4
+![output_image_when_k=4](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Color%20Space%20Quantization/images/quantizedRGB_k_4.png?raw=true)
+
+###### with k = 8
+![output_image_when_k=8](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Color%20Space%20Quantization/images/quantizedRGB_k_8.png?raw=true)
+
 
 **HSV color quantization**
 1. Convert the RGB input image to an HSV image.
@@ -19,3 +33,11 @@ _**Results**_
 
 _**Results**_
 
+###### with k = 2
+![output_image_when_k=2](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Color%20Space%20Quantization/images/quantizedHSV_with_k_2.png?raw=true)
+
+###### with k = 4
+![output_image_when_k=4](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Color%20Space%20Quantization/images/quantizedHSV_with_k_4.png?raw=true)
+
+###### with k = 8
+![output_image_when_k=8](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Color%20Space%20Quantization/images/quantizedHSV_with_k_8.png?raw=true)
