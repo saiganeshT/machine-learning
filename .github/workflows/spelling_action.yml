@@ -13,3 +13,5 @@ jobs:
       with:
         source_files: ReadMe.md 
         task_name: Markdown
+        output_file: spellcheck-output.txt
+        
