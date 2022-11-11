@@ -12,4 +12,25 @@ To apply hough transform on a given image to detect circular boundaries.
 
 ### output
 **Input Image**
-!(input image)()
+
+![input image](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Hough%20Transform/Images/egg.jpg?raw=true)
+
+**Edge Image**
+
+![edge image](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Hough%20Transform/Images/egg_edge_image_with_sigma_6.png?raw=true)
+
+**Accumulator Array at radius 70 and when gradients are used**
+
+![accumulator array when gradients are used](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Hough%20Transform/Images/accumulator_array_egg_radius_30_useGradient_1.png?raw=true)
+
+**Image of strongest cirlce (radius @ 70 with gradient)**
+
+![cirlce around egg when radius is 70 and gradient is used](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Hough%20Transform/Images/cirlce_egg_radius_70_useGradient_1.png?raw=true)
+
+**Accumulator Array at radius 70 and when gradients are not used**
+
+![accumulator array when gradients are not used](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Hough%20Transform/Images/accumulator_array_egg_radius_70_useGradient_0.png?raw=true)
+
+**Image of strongest cirlce (radius @ 70 with gradient)**
+
+![cirlce around egg when radius is 70 and gradient is used](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Hough%20Transform/Images/cirlce_egg_radius_70_useGradient_0.png?raw=true)
