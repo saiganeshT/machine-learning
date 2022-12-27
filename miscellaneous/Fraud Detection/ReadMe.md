@@ -11,57 +11,57 @@ The sample size is 284,807 and there are 30 features. The data is highly imbalan
 
 Overview of algorithms
 
-_Logistic regression_ is a classification algorithm that uses a linear combination of features to predict the probability that an input belongs to a certain class. It does this by using the logistic function to map the predicted probability to a value between 0 and 1.
+_Logistic regression_ is a classification algorithm that uses a linear combination of features to predict the probability that an input belongs to a certain class. It does this by using the logistic function to map the predicted probability to a value between 0 and 1. \
 
-_Support vector machines_ (SVMs) are a type of supervised learning algorithm that can be used for classification or regression tasks. They work by finding the hyperplane in a high-dimensional space that maximally separates the different classes.
+_Support vector machines_ (SVMs) are a type of supervised learning algorithm that can be used for classification or regression tasks. They work by finding the hyperplane in a high-dimensional space that maximally separates the different classes. \
 
-_AdaBoost_ (Adaptive Boosting) is an ensemble learning algorithm that combines multiple weak learners to form a strong learner. It works by iteratively training weak learners on weighted versions of the training data, with more weight given to misclassified examples.
+_AdaBoost_ (Adaptive Boosting) is an ensemble learning algorithm that combines multiple weak learners to form a strong learner. It works by iteratively training weak learners on weighted versions of the training data, with more weight given to misclassified examples.\
 
-A _multi-layer perceptron_ (MLP) is a type of neural network that consists of multiple layers of artificial neurons, with the input layer receiving the input data, hidden layers processing it, and the output layer providing the final prediction. It works by adjusting the weights of the connections between neurons based on the error between the predicted and actual output.
+A _multi-layer perceptron_ (MLP) is a type of neural network that consists of multiple layers of artificial neurons, with the input layer receiving the input data, hidden layers processing it, and the output layer providing the final prediction. It works by adjusting the weights of the connections between neurons based on the error between the predicted and actual output.\
 
 ### Reasons for the choosing these
-_Logistic Regression_: This simple method is used to establish a baseline
-_Ensemble_: This popular technique is used to compare how they compare against neural networks in an unbalanced data setting.
-_SVM_: This too along with Logistic Regression is used to establish a baseline.
+_Logistic Regression_: This simple method is used to establish a baseline\
+_Ensemble_: This popular technique is used to compare how they compare against neural networks in an unbalanced data setting.\
+_SVM_: This too along with Logistic Regression is used to establish a baseline.\
 _Multi-Layer Perceptron_: To test whether they generalize well with unbalanced data or
-succumb overfitting.
+succumb overfitting.\
 
 ### Use of the dataset
 The label column of the dataset has been used as our target variable and all the rest of the columnas are used as features.
 
-Splits
-   Training: 60%
-   Validation: 20%
-   Testing: 20%
+Splits\
+   Training: 60%\
+   Validation: 20%\
+   Testing: 20%\
 
 ### Preprocessing
 There is no need to clean the data and there is no missing data either, but there is a need for mitigating the imbalance in the labels either by over-sampling or by undersampling. SMOTE (Synthetic Minority Oversampling TEchnique) is used to oversample the data. The data is also standardized before feeding it to the model for training and testing
 
 ### Hyper-parameter Tuning
 
-Bayesian Search is employed instead of Grid Search to find the best parameters. And a 3-fold cross validation is used to evaluate the performance.
+Bayesian Search is employed instead of Grid Search to find the best parameters. And a 3-fold cross validation is used to evaluate the performance.\
 
 Bayesian hyperparameter tuning is a method of optimizing the hyperparameters of a machine learning model by searching for the values that are most likely to lead to good performance. It does this by building a probabilistic model of the hyperparameter space and using techniques from Bayesian statistics to update the model as more data becomes available.
 
 
-Hyper-parameter space for different models
+Hyper-parameter space for different models\
 
-_Logistic Regression_
-solver : 'newton-cg, lbfgs
-C : [0.5, 1]
+_Logistic Regression_\
+solver : 'newton-cg, lbfgs\
+C : [0.5, 1]\
 
-_SVM_
-kernel : linear, rbf
-C : 0.5, 1
+_SVM_\
+kernel : linear, rbf\
+C : 0.5, 1\
 
-_AdaBoost_
-n_estimators : 10-50
+_AdaBoost_\
+n_estimators : 10-50\
 
-_MLP_*
-epochs : 5, 10, 20, 50
-optimizers : adam, rmsprop
+_MLP_*\
+epochs : 5, 10, 20, 50\
+optimizers : adam, rmsprop\
 
-* parameter tuning is done manually for neural networks
+* parameter tuning is done manually for neural networks\
 
 ### Results
 
