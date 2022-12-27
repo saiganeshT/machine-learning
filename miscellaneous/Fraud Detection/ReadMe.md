@@ -65,37 +65,46 @@ optimizers : adam, rmsprop
 
 ### Results
 
+![samples_bar_chart](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img1.png)
 
 The training data has been over sampled by using Synthetic Minority Oversampling TEchnique (SMOTE) to generate new data for fraudulent transactions. 
 
 Logistic Regression
 
+![logistic_regression_confusion_matrix](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img2.png)
 
 The confusion matrix shows that the logistic regression model is performing well on detecting fraudulent transactions but performing poorly on non-fraudulent ones. This shows that it is overfitting  to the minority class.
 
 
 SVM
 
+![svm_confusion_matrix](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img3.png)
+
 The confusion matrix shows that the SVM model is performing well on detecting non-fraudulent transactions but performing poorly on fraudulent ones. This shows that it is overfitting to the majority class.
 
 
 AdaBoost
 
+![adaboost_confusion_matrix](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img4.png)
+
 The confusion matrix shows that the AdaBoost model is performing well on detecting both the classes. This shows that it is generalizing well. This is the best model.
-
-
-
-
-
 
 Neural Networks
 
+![architecture](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img8.png)
 
 This figure shows the architecture of our neural network with the number of trainable and non-trainable parameters.
 
+![accuracy_curves](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img5.png)
+
 The accuracy curve on the training data gradually rises with epochs eventually flattening. Whereas the validation curve stays constant. This shows that the model is not overfitting.
 
+![loss_curves](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img6.png)
+
 Interestly, for the loss curves, on training data they are stable whereas they are unstable on validation data.
+
+![neural_network_confusion_matrix](https://github.com/saiganeshT/machine-learning/blob/main/miscellaneous/Fraud%20Detection/images/img7.png)
+
 
 The confusion matrix shows that the logistic regression model is performing well on detecting fraudulent transactions but performing poorly on non-fraudulent ones. This shows that it is overfitting  to the minority class.
 
