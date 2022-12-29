@@ -51,6 +51,9 @@ Number of Classes : 3 (Helmet, Person, Head)
 ![prediction_3](https://github.com/saiganeshT/machine-learning/blob/main/Computer%20Vision/Helmet%20Detection/images/helm_img4.png)
 
 ### Conclusion
-- Pre-trained models were much more stable during training than blank slate models.
-- Faster-RCNN has better performance in Precision and recall than SSD
-- SSD is more eﬃcient with time
+In conclusion, pre-trained models were much more stable during training than blank slate models. This is likely due to the fact that pre-trained models have already been exposed to a wide range of data and have been trained on a variety of tasks, making them more robust and adaptable. In terms of performance, Faster-RCNN has better Precision and recall than SSD, but SSD is more efficient with time. This indicates that the choice of model may depend on the specific requirements of the task at hand. Additionally, data from different sources could have been collected to check the robustness of the model and a more in-depth analysis of both models could have been performed to further compare their strengths and weaknesses. Upon closer examination, the mAP and recall scores do not reflect the results shown in the images and their bounding boxes are very accurate. Therefore, some work needs to be done to adjust the scores
+
+### References
+- https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/
+- https://www.kaggle.com/code/selmandedeakayoullar/helmet-detection-cnn
+- https://neptune.ai/blog/how-to-train-your-own-object-detector-using-tensorflow-object-detection-api
