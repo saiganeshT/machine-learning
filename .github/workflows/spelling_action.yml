@@ -1,17 +1,20 @@
-name: Spellcheck Action
-on: push
+name: Spell Check
+
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  build:
-    name: Spellcheck
+  spell-check:
     runs-on: ubuntu-latest
     steps:
-    # The checkout step
-    - uses: actions/checkout@master
-    - uses: rojopolis/spellcheck-github-actions@0.27.0
-      name: Spellcheck
-      with:
-        source_files: ReadMe.md 
-        task_name: Markdown
-        output_file: spellcheck-output.txt
-        
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm install markdown-spellcheck -g
+      - run: markdown-spellcheck --report README.md
+      - name: Fail if spelling errors found
+        if: ${{ failure() }}
+        run: exit 1
