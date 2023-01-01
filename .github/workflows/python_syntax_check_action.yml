@@ -16,5 +16,5 @@ jobs:
         python -m pip install flake8
     - name: Lint with flake8
       run: |
-        # Run flake8 on all .py files in the repository
-        find . -name "*.py" | xargs flake8
+        # Run flake8 on all .py files in the repository, including those with spaces in their names
+        find . -name "*.py" -print0 | xargs -0 flake8
